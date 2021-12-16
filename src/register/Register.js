@@ -19,7 +19,7 @@ export default class Register extends Component{
         });
     }
     handleClicked(){
-        let url = `https://localhost:3000/data`;
+        let url = `/data`;
         let data = {
             idkey:this.state.idkey,
             firstname:this.state.firstname,
