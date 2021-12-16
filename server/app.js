@@ -8,8 +8,8 @@ var fs = require('fs');
 var http = require('http');
 var https = require('https');
 //var privateKey  = fs.readFileSync(path.resolve('server/key.pem', 'utf8'));
-var privateKey  = fs.readFileSync(__dirname+'/key.pem', 'utf8');
-var certificate = fs.readFileSync(__dirname+'/cert.pem', 'utf8');
+var privateKey  = fs.readFileSync('/etc/letsencrypt/live/supakorn.ddns.net/privkey.pem', 'utf8');
+var certificate = fs.readFileSync('/etc/letsencrypt/live/supakorn.ddns.net/fullchain.pem', 'utf8');
 var credentials = {key: privateKey, cert: certificate};
 const app = express();
 
